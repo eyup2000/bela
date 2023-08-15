@@ -5,7 +5,7 @@ Feature: The Home Page of Patient Register
     And The user goes Hasta İşlemleri, Ayaktan Hasta İşlemleri and then click Poliklinik Muayene Kayıt
 
   @TC0008 @Smoke
-  Scenario: The user can display the registered patient
+  Scenario: The user can display the registered patient Faruk Faruk Faruk Faruk Faruk Faruk
     When insert the TC Identity Number in TC ID box
     And press enter
     And check TC ID warning popup
