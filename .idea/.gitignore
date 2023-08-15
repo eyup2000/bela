@@ -41,4 +41,4 @@ build/
 ### Mac OS ###
 .DS_Store
 
-/test-output/
+/test-output/!/misc.xml
