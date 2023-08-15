@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.678">
+    <testcase classname="probel_hastaKayit" name="TC003 - Entering a future date of the newborn baby's baby birth week" time="63.409">
+        <failure message="element click intercepted: Element &lt;input type=&quot;checkbox&quot; class=&quot;chck&quot; id=&quot;CHK_HASTA_KAYIT_YENIDOGAN&quot; onchange=&quot;YeniDoganKontrol()&quot;&gt; is not clickable at point (601, 273). Other element would receive the click: &lt;div class=&quot;PopupOverlay&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=115.0.5790.171)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LV7AB2U', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d68a7f8b662e3d2c2bb22cc8c6c8a871" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given The user logs in......................................................passed
+And The user goes Hasta İşlemleri, Ayaktan Hasta İşlemleri and then click Poliklinik Muayene Kayıt.passed
+And Click the Hasta button..................................................passed
+And Enter Kurum, Kurum detay................................................passed
+Then make patient type -SAĞLIK TURİZMİ-.....................................passed
+And Enter -TC no- -Adi -soyadi- -doğum tarihi- -cinsiyet- -ana adi- -baba adi- -doğum yeri- -anne tc no-.passed
+And -Yeni doğan- button click...............................................failed
+And verify the text -Bebeğin doğum haftası günü-............................skipped
+And -Bebeğin doğum- -haftasi--günü- enter a week and future days............skipped
+And enter mobile number -cep telefonu- and click -sms gönderilebilir-.......skipped
+And Click the -kaydet f10- boxxx............................................skipped
+And Select a valid Poliklinik on Muayene Kayıt Page.........................skipped
+And Select a valid Geliş Şekli on Muayene Kayıt Page........................skipped
+And Click Kaydet button on Muayene Kayıt Page...............................skipped
+Then Bilgiler Kaydedildi should be seen on Popup Alert on Muayene Kayıt Page.skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" class="chck" id="CHK_HASTA_KAYIT_YENIDOGAN" onchange="YeniDoganKontrol()"> is not clickable at point (601, 273). Other element would receive the click: <div class="PopupOverlay"></div>
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LV7AB2U', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d68a7f8b662e3d2c2bb22cc8c6c8a871
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at stepdefinitions.HastaKayit_StepDefinitions_E.yeni_doğan_button_click(HastaKayit_StepDefinitions_E.java:112)
+	at ✽.-Yeni doğan- button click(file:///C:/Users/user/IdeaProjects/bela/src/test/resources/features/HastaKayit_E.feature:24)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
