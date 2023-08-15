@@ -17,7 +17,7 @@ import utilities.ReusableMethods;
 public class HastaKayit_StepDefinitions_E {
 
 
-
+//hhhhhhhhh
     BasePage basePage = new BasePage();
     Actions actions = new Actions(Driver.getDriver());
     Hasta_Kayit_Page_E hasta_kayit_page = new Hasta_Kayit_Page_E();
